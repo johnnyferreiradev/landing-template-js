@@ -81,3 +81,78 @@ b, strong {
   margin: 20px 0;
   border-bottom: 1px solid #f6f7fb;
 }
+
+/* Color classes */
+/* Background */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--second-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.bg-danger {
+  background-color: var(--danger-color);
+}
+
+.bg-alert {
+  background-color: var(--alert-color);
+}
+
+.bg-success {
+  background-color: var(--success-color);
+}
+
+.bg-info {
+  background-color: var(--info-color);
+}
+
+/* Text */
+.txt-primary {
+  color: var(--primary-color);
+}
+
+.txt-secondary {
+  color: var(--second-color);
+}
+
+.txt-tertiary {
+  color: var(--tertiary-color);
+}
+
+.txt-dark {
+  color: var(--dark-color);
+}
+
+.txt-white {
+  color: var(--white-color);
+}
+
+.txt-danger {
+  color: var(--danger-color);
+}
+
+.txt-alert {
+  color: var(--alert-color);
+}
+
+.txt-success {
+  color: var(--success-color);
+}
+
+.txt-info {
+  color: var(--info-color);
+}
