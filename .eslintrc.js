@@ -18,5 +18,12 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'no-param-reassign': ['error', { props: false }],
+    'react/jsx-props-no-spreading': 'off',
+    'no-trailing-spaces': ['error', { skipBlankLines: true }],
+    'react/prop-types': 0,
+    'jsx-a11y/label-has-for': 0,
+    'no-use-before-define': ['error', { functions: false, classes: true }],
   },
 };
