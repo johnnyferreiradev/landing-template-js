@@ -43,7 +43,7 @@ html {
 
 body {
   font-family: Roboto;
-  color: #171718;
+  color: var(--dark-color);
   line-height: 1.5;
 }
 
