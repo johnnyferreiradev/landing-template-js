@@ -1,13 +1,74 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
-const PrimaryButton = () => <div>Primary button</div>;
+import { StyledButton, StyledLink, StyledAnchor } from './styles';
 
-const SecondaryButton = () => <div>Secondary button</div>;
+const Button = ({
+  children,
+  className,
+  fluid,
+  disabled,
+  theme = 'primary',
+  style,
+  onClick,
+}) => (
+  <StyledButton
+    type="button"
+    className={className}
+    fluid={fluid}
+    disabled={disabled}
+    theme={theme}
+    style={style}
+    onClick={onClick}
+  >
+    {children}
+  </StyledButton>
+);
 
-const LinkButton = () => <div>Link button</div>;
+const LinkButton = ({
+  children,
+  fluid,
+  disabled,
+  theme = 'link',
+  style,
+  to,
+  underline,
+}) => (
+  <StyledLink
+    to={to}
+    fluid={fluid}
+    disabled={disabled}
+    theme={theme}
+    style={style}
+    underline={underline}
+  >
+    {children}
+  </StyledLink>
+);
+
+const AnchorButton = ({
+  children,
+  fluid,
+  disabled,
+  theme = 'link',
+  style,
+  href,
+  underline = true,
+}) => (
+  <StyledAnchor
+    href={href}
+    fluid={fluid}
+    disabled={disabled}
+    theme={theme}
+    style={style}
+    underline={underline}
+  >
+    {children}
+  </StyledAnchor>
+);
 
 export {
-  PrimaryButton,
-  SecondaryButton,
+  Button,
   LinkButton,
+  AnchorButton,
 };
