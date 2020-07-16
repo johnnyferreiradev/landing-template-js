@@ -1,10 +1,12 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { PrimaryButton, SecondaryButton, LinkButton } from '../../components/Buttons/index';
 
 const Home = () => (
   <div>
-    <p>Home</p>
+    <PrimaryButton />
+    <SecondaryButton />
+    <LinkButton />
   </div>
 );
 
