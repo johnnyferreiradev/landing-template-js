@@ -165,3 +165,60 @@ b, strong {
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
+
+/* Flexbox */
+.flex {
+  display: flex !important;
+}
+
+.f-row {
+  flex-direction: row !important;
+}
+
+.f-column {
+  flex-direction: column !important;
+}
+
+.f-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.f-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.j-c-center {
+  justify-content: center !important;
+}
+
+.j-c-start {
+  justify-content: flex-start !important;
+}
+
+.j-c-end {
+  justify-content: flex-end !important;
+}
+
+.j-c-between {
+  justify-content: space-between !important;
+}
+
+.j-c-around {
+  justify-content: space-around !important;
+}
+
+.a-i-center {
+  align-items: center !important;
+}
+
+.a-i-start {
+  align-items: flex-start !important;
+}
+
+.a-i-end {
+  align-items: flex-end !important;
+}
