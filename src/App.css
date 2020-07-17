@@ -156,3 +156,12 @@ b, strong {
 .txt-info {
   color: var(--info-color);
 }
+
+/* Components styleds */
+.card {
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
