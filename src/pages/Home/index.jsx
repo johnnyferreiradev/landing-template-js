@@ -69,6 +69,20 @@ const Home = () => (
         </Column>
       </Row>
     </Container>
+
+    <h1>Flexbox classes</h1>
+    <div className="flex j-c-end a-i-center">
+      <div>Element 1</div>
+      <div>Element 2</div>
+      <div>Element 3</div>
+    </div>
+
+    <h1>Margin and Padding classes</h1>
+    <ul className="ml-3 bg-primary txt-white">
+      <li className="p-3 bg-info">Element 1</li>
+      <li className="pl-3 ml-3 bg-danger">Element 2</li>
+      <li className="mt-2 bg-warning">Element 3</li>
+    </ul>
   </div>
 );
 
