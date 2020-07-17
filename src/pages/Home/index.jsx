@@ -21,7 +21,7 @@ const Home = () => (
 
     <h2>Container fluid</h2>
     <Container style={{ background: 'blue' }} fluid>
-      <Row>
+      <Row justifyContent="flex-end">
         <Column desktop="12" tablet="12" mobile="12" style={{ background: 'gray' }}>Row 1 - Column 1</Column>
         <Column desktop="6" tablet="12" mobile="12" style={{ background: 'red' }}>Row 1 - Column 2</Column>
       </Row>
@@ -35,7 +35,7 @@ const Home = () => (
 
     <h2>Container no fluid</h2>
     <Container style={{ background: 'red' }}>
-      <Row>
+      <Row alignItems="center">
         <Column desktop="4" tablet="8" mobile="8" style={{ background: 'orange' }}>Row 1 - Column 1</Column>
         <Column desktop="8" tablet="4" mobile="8" style={{ background: 'pink' }}>Row 1 - Column 2</Column>
       </Row>
