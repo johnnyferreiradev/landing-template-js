@@ -29,7 +29,7 @@ const Modal = ({
     <ModalContainer onClick={(e) => clickAwayListener(e)} className={`modal-on-blur ${className}`} id={id}>
       <ModalContent className="modal-content" ref={modalContent}>
         <ModalHeader className="modal-header">
-          <button type="button" onClick={() => onClose()}>close button</button>
+          <button type="button" onClick={() => onClose()}>X</button>
         </ModalHeader>
         <ModalBody className="modal-body">
           {children}
