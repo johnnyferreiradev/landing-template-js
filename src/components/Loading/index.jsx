@@ -9,11 +9,12 @@ export default function Loading({
   height,
   width,
   styles,
+  fluid,
   id,
   className,
 }) {
   return (
-    <StyledLoading className={`loading ${className}`} id={id} style={styles}>
+    <StyledLoading className={`loading ${className}`} fluid={fluid} id={id} style={styles}>
       <ReactLoading type={type} color={color} height={height} width={width} />
     </StyledLoading>
   );
