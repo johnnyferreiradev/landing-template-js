@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Button, LinkButton, AnchorButton } from '../../components/Buttons/index';
 import { Container, Row, Column } from '../../components/Grid';
+import Card from '../../components/Card';
 
 const Home = () => (
   <div>
@@ -42,6 +43,30 @@ const Home = () => (
       <Row>
         <Column desktop="2" tablet="10" mobile="12" style={{ background: 'purple' }}>Row 2 - Column 1</Column>
         <Column desktop="10" tablet="2" mobile="2" style={{ background: 'brown' }}>Row 2 - Column 2</Column>
+      </Row>
+    </Container>
+
+    <h1>Card</h1>
+
+    <h2>Class card</h2>
+    <Container>
+      <Row>
+        <Column desktop="12" style={{ background: '#f0f0f0' }}>
+          <div className="card">
+            <h3>Card content</h3>
+          </div>
+        </Column>
+      </Row>
+    </Container>
+
+    <h2>Component card</h2>
+    <Container>
+      <Row>
+        <Column desktop="12" style={{ background: '#f0f0f0' }}>
+          <Card width="max-content">
+            <h3>Styled component card content</h3>
+          </Card>
+        </Column>
       </Row>
     </Container>
   </div>
