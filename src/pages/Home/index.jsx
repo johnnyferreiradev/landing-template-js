@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, LinkButton, AnchorButton } from '../../components/Buttons/index';
 import { Container, Row, Column } from '../../components/Grid';
 import Card from '../../components/Card';
+import Loading from '../../components/Loading';
 
 const Home = () => (
   <div>
@@ -83,6 +84,18 @@ const Home = () => (
       <li className="pl-3 ml-3 bg-danger">Element 2</li>
       <li className="mt-2 bg-warning">Element 3</li>
     </ul>
+
+    <h1>Loading</h1>
+    <Loading type="blank" color="#404040" width={32} height={32} />
+    <Loading type="balls" color="#404040" width={32} height={32} fluid />
+    <Loading type="bars" color="#404040" width={32} height={32} />
+    <Loading type="bubbles" color="#404040" width="100px" height="100px" />
+    <Loading type="cubes" color="#404040" width={32} height={32} />
+    <Loading type="cylon" color="#404040" width={32} height={32} />
+    <Loading type="spin" color="#404040" width={32} height={32} />
+    <Loading type="spinningBubbles" color="#404040" width={32} height={32} />
+    <Loading type="spokes" color="#404040" width={32} height={32} />
+
   </div>
 );
 
