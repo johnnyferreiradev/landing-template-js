@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 // fluid: ocupa 100% do espaço horizontal disponível
 
-export const Container = styled.div`
+export const Container = styled.div.attrs(() => ({
+  className: 'grid-container',
+}))`
   width: 100%;
-  max-width: ${(props) => (props.fluid ? 'auto' : '1366px')};
+  max-width: ${(props) => (props.fluid ? '100%' : '1366px')};
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -12,7 +14,9 @@ export const Container = styled.div`
   align-items: flex-start;
 `;
 
-export const Row = styled.div`
+export const Row = styled.div.attrs(() => ({
+  className: 'grid-row',
+}))`
   width: 100%;
   heigth: auto;
   box-sizing: border-box;
@@ -29,7 +33,9 @@ function getColumnWidth(value) {
   return `width: ${width}%;`;
 }
 
-export const Column = styled.div`
+export const Column = styled.div.attrs(() => ({
+  className: 'grid-column',
+}))`
   box-sizing: border-box;
   @media only screen and (max-width: 768px) {
     ${({ mobile }) => mobile && getColumnWidth(mobile)}

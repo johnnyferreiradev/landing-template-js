@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
-
 import Routes from './routes';
+
+import AppContext from './contexters/AppContext';
+
+import './App.css';
 
 function App() {
   return (
-    <Routes />
+    <AppContext>
+      <Routes />
+    </AppContext>
   );
 }
 
