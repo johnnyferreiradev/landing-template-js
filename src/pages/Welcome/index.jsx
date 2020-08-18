@@ -6,7 +6,9 @@ import Banner from '../../components/Banner';
 import Section from '../../components/Section';
 import { Button, AnchorButton } from '../../components/Buttons';
 
-import { Row, Column } from '../../components/Grid';
+import { Container, Row, Column } from '../../components/Grid';
+
+import directories from '../../assets/images/directories.png';
 
 import StyledWelcome from './styles';
 
@@ -35,19 +37,79 @@ function Welcome() {
           </Row>
         </Banner>
 
-        <Section>
-          <h3>Conteúdo da seção 1</h3>
-          <p>Paragrafo sobre a seção 1</p>
+        <Section className="welcome-section">
+          <Container>
+            <Row>
+              <Column desktop="12" tablet="12" mobile="12">
+                <h3>O que é?</h3>
+              </Column>
+            </Row>
+            <Row>
+              <Column desktop="6" tablet="6" mobile="12">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget feugiat massa.
+                  In sed nisi vehicula, imperdiet metus a, ornare enim. Ut pellentesque,
+                  turpis eget vulputate efficitur, felis ex laoreet tortor,
+                  vel pharetra nibh ante eu enim. Fusce
+                  vel dui metus. In vulputate erat ut ante placerat, a fermentum erat malesuada.
+                </p>
+              </Column>
+              <Column desktop="6" tablet="6" mobile="12">
+                <img src={directories} alt="Directory structure" />
+              </Column>
+            </Row>
+          </Container>
         </Section>
 
-        <Section background="#ECECEC">
-          <h3>Conteúdo da seção 2</h3>
-          <p>Paragrafo sobre a seção 2</p>
+        <Section background="#ECECEC" className="welcome-section">
+          <Container>
+            <Row>
+              <Column desktop="12" tablet="12" mobile="12">
+                <h3>Componentes</h3>
+              </Column>
+            </Row>
+            <Row>
+              <Column desktop="6" tablet="6" mobile="12">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget feugiat massa.
+                  In sed nisi vehicula, imperdiet metus a, ornare enim. Ut pellentesque,
+                  turpis eget vulputate efficitur, felis ex laoreet tortor,
+                  vel pharetra nibh ante eu enim. Fusce
+                  vel dui metus. In vulputate erat ut ante placerat, a fermentum erat malesuada.
+                </p>
+              </Column>
+            </Row>
+            <Row>
+              <Column desktop="12" tablet="12" mobile="12">
+                <Button theme="secondary">Documentation</Button>
+              </Column>
+            </Row>
+          </Container>
         </Section>
 
-        <Section>
-          <h3>Conteúdo da seção 2</h3>
-          <p>Paragrafo sobre a seção 2</p>
+        <Section className="welcome-section">
+          <Container>
+            <Row>
+              <Column desktop="12" tablet="12" mobile="12">
+                <h3>Tecnologias utilizadas</h3>
+              </Column>
+            </Row>
+            <Row>
+              <Column desktop="6" tablet="6" mobile="12">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget feugiat massa.
+                </p>
+              </Column>
+            </Row>
+            <Row>
+              <Column desktop="12" tablet="12" mobile="12">
+                <Button theme="secondary">Documentation</Button>
+                <Button theme="secondary">Documentation</Button>
+                <Button theme="secondary">Documentation</Button>
+                <Button theme="secondary">Documentation</Button>
+              </Column>
+            </Row>
+          </Container>
         </Section>
       </MainLayout>
     </StyledWelcome>

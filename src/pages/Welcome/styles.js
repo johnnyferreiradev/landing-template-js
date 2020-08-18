@@ -30,6 +30,12 @@ const StyledWelcome = styled.div`
         }
       }
     }
+
+    .welcome-section {
+      padding: 32px 0px;
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 

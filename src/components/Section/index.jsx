@@ -2,9 +2,9 @@ import React from 'react';
 
 import StyledSection from './styles';
 
-function Section({ children, background }) {
+function Section({ children, background, className }) {
   return (
-    <StyledSection background={background}>{children}</StyledSection>
+    <StyledSection background={background} className={className}>{children}</StyledSection>
   );
 }
 
