@@ -22,7 +22,7 @@ function Welcome() {
           <Row alignItems="flex-end">
             <Column desktop="12" tablet="12" mobile="12">
               <div className="banner-texts">
-                <h1 className="banner-title">Conteúdo do banner</h1>
+                <h1 className="banner-title">Fastlanding</h1>
                 <h3 className="banner-subtitle">This is a subtitle</h3>
               </div>
             </Column>

@@ -1,14 +1,18 @@
 /* Reset css */
+
+/* f72585, 7209b7, 3a0ca3, 4361ee, 4cc9f0 */
+
 :root {
   --bold: 600;
   --normal: 400;
   --thin: 100;
 
   /* colors */
-  --primary-color: #88898C;
-  --second-color: #D7D7D9;
-  --tertiary-color: #404040;
-  --dark-color: #00010D;
+  --primary-color: #4361ee;
+  --second-color: #4cc9f0;
+  --tertiary-color: #f72585;
+  --quaternary-color: #7209b7;
+  --dark-color: #20232A;
   --white-color: #ffffff;
   --danger-color: #D03A41;
   --warning-color: #F1CC07;
