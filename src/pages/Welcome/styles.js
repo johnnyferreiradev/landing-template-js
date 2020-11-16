@@ -4,6 +4,9 @@ const StyledWelcome = styled.div.attrs(() => ({
   className: 'welcome-page',
 }))`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .banner {
     .grid-container {
