@@ -28,6 +28,8 @@ function Header() {
   const [menuState, setMenuState] = useState('closed');
 
   const scrollToRef = (currentRef) => {
+    if (!currentRef) return;
+
     setMenuState('closed');
     const offsetTop = currentRef.current.getBoundingClientRect().y;
     window.scrollTo(0, offsetTop > 100 ? offsetTop - 32 : 0);
@@ -58,14 +60,14 @@ function Header() {
               <Column desktop="2" tablet="3" mobile="3" className="flex j-c-end">
                 <ul className="nav-options desktop-nav no-button">
                   <li>
-                    <button type="button" className="no-button" onClick={() => scrollToRef(refs.footer)}>
+                    <button type="button" className="no-button" onClick={() => scrollToRef()}>
                       Componentes
                     </button>
                   </li>
                 </ul>
               </Column>
               <Column desktop="2" tablet="3" mobile="10" className="flex j-c-center contact">
-                <Button theme="primary" onClick={() => scrollToRef(refs.footer)}>Repositório</Button>
+                <Button theme="primary" onClick={() => scrollToRef()}>Repositório</Button>
               </Column>
             </Row>
           </Column>
@@ -75,27 +77,12 @@ function Header() {
           <Column desktop="6" tablet="6" mobile="2" className="flex j-c-end nav-options no-button">
             <ul className="">
               <li>
-                <button type="button" className="no-button" onClick={() => scrollToRef(refs.banner)}>
-                  Inicial
+                <button type="button" className="no-button" onClick={() => scrollToRef()}>
+                  Componentes
                 </button>
               </li>
               <li>
-                <button type="button" className="no-button" onClick={() => scrollToRef(refs.footer)}>
-                  Sobre
-                </button>
-              </li>
-              <li>
-                <button type="button" className="no-button" onClick={() => scrollToRef(refs.panels)}>
-                  Paineis
-                </button>
-              </li>
-              <li>
-                <button type="button" className="no-button" onClick={() => scrollToRef(refs.blog)}>
-                  Blog
-                </button>
-              </li>
-              <li>
-                <Button theme="primary" onClick={() => scrollToRef(refs.footer)}>Contato</Button>
+                <Button theme="primary" onClick={() => scrollToRef()}>Repositório</Button>
               </li>
             </ul>
           </Column>
