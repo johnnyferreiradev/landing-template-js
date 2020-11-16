@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { RefsContext } from 'contexters/RefsContext';
+// import { RefsContext } from 'contexters/RefsContext';
 
 import { APP_LOGO } from 'settings';
 
@@ -17,13 +17,7 @@ import StyledHeader from './styles';
 
 function Header() {
   const app = useApp();
-  const refs = useContext(RefsContext);
-
-  // const scrollToRef = (currentRef) => {
-  //   // setMenuState('closed');
-  //   const offsetTop = currentRef.current.getBoundingClientRect().y;
-  //   window.scrollTo(0, offsetTop > 100 ? offsetTop - 32 : 0);
-  // };
+  // const refs = useContext(RefsContext);
 
   const [menuState, setMenuState] = useState('closed');
 
