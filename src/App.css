@@ -1,18 +1,16 @@
 /* Reset css */
 
-/* f72585, 7209b7, 3a0ca3, 4361ee, 4cc9f0 */
-
 :root {
   --bold: 600;
   --normal: 400;
   --thin: 100;
 
   /* colors */
-  --primary-color: #4361ee;
-  --second-color: #4cc9f0;
-  --tertiary-color: #f72585;
-  --quaternary-color: #7209b7;
-  --dark-color: #20232A;
+  --primary-color: #1f1f1f;
+  --second-color: #A3AAAE;
+  --tertiary-color: #f3f3f3;
+  --quaternary-color: #F6F6FB;
+  --dark-color: #1f1f1f;
   --white-color: #ffffff;
   --danger-color: #D03A41;
   --warning-color: #F1CC07;
@@ -25,8 +23,23 @@
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: RobotoMedium;
+  src: url('./assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: RobotoRegular;
   src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url('./assets/fonts/Roboto/Roboto-Light.ttf');
 }
 
 * {
@@ -46,7 +59,7 @@ html {
 }
 
 body {
-  font-family: Roboto;
+  font-family: RobotoMedium;
   color: var(--dark-color);
   line-height: 1.5;
 }
@@ -54,6 +67,22 @@ body {
 img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+.font-medium {
+  font-family: RobotoMedium;
+}
+
+.font-bold {
+  font-family: RobotoBold;
+}
+
+.font-Regular {
+  font-family: RobotoRegular;
+}
+
+.font-light {
+  font-family: RobotoLight;
 }
 
 .text-center {
@@ -74,6 +103,20 @@ h3 {
 
 b, strong {
   font-weight: var(--bold)
+}
+
+ul {
+  list-style: none;
+}
+
+.no-button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .thin {

@@ -1,29 +1,32 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const primaryColor = '#88898C';
-// const secondColor = '#D7D7D9';
-const tertiaryColor = '#404040';
-// const darkColor = '#00010D';
-const whiteColor = '#ffffff';
-const dangerColor = '#D03A41';
-const warningColor = '#F1CC07';
-const successColor = '#0AE569';
-const infoColor = '#5C73F2';
+import {
+  primaryColor,
+  secondaryColor,
+  tertiaryColor,
+  // quaternaryColor,
+  // darkColor,
+  whiteColor,
+  dangerColor,
+  warningColor,
+  successColor,
+  infoColor,
+} from 'variables';
 
 const buttonThemes = {
   primary: {
     background: primaryColor,
     color: whiteColor,
     border: 'none',
-    hoverColor: tertiaryColor,
-    boxShadow: `0 2px 4px 0 ${primaryColor}55`,
+    hoverColor: secondaryColor,
+    boxShadow: 'none',
   },
   secondary: {
     background: whiteColor,
-    color: tertiaryColor,
+    color: primaryColor,
     border: `2px solid ${primaryColor}`,
-    hoverColor: '#fafafa',
+    hoverColor: secondaryColor,
     boxShadow: 'none',
   },
   link: {
@@ -71,10 +74,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   outline: none;
   box-shadow: ${({ theme }) => buttonThemes[theme].boxShadow};
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 16px;
+  padding: 14px 48px;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
   transition: all .5s;
   :hover {
     color: ${({ theme }) => (theme === 'link' ? buttonThemes[theme].hoverColor : buttonThemes[theme].color)};
@@ -92,7 +96,7 @@ const StyledLink = styled(Link)`
   outline: none;
   box-shadow: ${({ theme }) => buttonThemes[theme].boxShadow};
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
   transition: all .5s;
@@ -113,7 +117,7 @@ const StyledAnchor = styled.a`
   outline: none;
   box-shadow: ${({ theme }) => buttonThemes[theme].boxShadow};
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
   transition: all .5s;

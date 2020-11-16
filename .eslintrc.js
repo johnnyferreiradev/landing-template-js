@@ -26,4 +26,12 @@ module.exports = {
     'jsx-a11y/label-has-for': 0,
     'no-use-before-define': ['error', { functions: false, classes: true }],
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', 'src/'],
+      },
+    },
+  },
 };

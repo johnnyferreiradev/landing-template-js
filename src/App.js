@@ -1,14 +1,17 @@
 import React from 'react';
-import Routes from './routes';
+import Routes from 'routes';
 
-import AppContext from './contexters/AppContext';
+import AppContext from 'contexters/AppContext';
+import RefsContext from 'contexters/RefsContext';
 
 import './App.css';
 
 function App() {
   return (
     <AppContext>
-      <Routes />
+      <RefsContext>
+        <Routes />
+      </RefsContext>
     </AppContext>
   );
 }

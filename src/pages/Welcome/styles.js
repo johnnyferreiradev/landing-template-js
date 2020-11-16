@@ -1,21 +1,23 @@
 import styled from 'styled-components';
 
-const StyledWelcome = styled.div`
-  .welcome-page {
+const StyledWelcome = styled.div.attrs(() => ({
+  className: 'welcome-page',
+}))`
+  width: 100%;
+
+  .banner {
     .grid-container {
+      height: 100%;
       justify-content: flex-end;
+      padding-bottom: 64px;
 
-      .banner-texts {
-        margin: 32px 0px;
+      .banner-title {
+        text-align: center;
+        font-size: 48px;
+      }
 
-        .banner-title {
-          text-align: center;
-          font-size: 48px;
-        }
-
-        .banner-subtitle {
-          text-align: center;
-        }
+      .banner-subtitle {
+        text-align: center;
       }
 
       .banner-actions {
@@ -29,12 +31,6 @@ const StyledWelcome = styled.div`
           margin: 0 4px;
         }
       }
-    }
-
-    .welcome-section {
-      padding: 32px 0px;
-      display: flex;
-      justify-content: center;
     }
   }
 `;

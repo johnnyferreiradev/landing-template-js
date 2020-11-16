@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
+
+import Public from './public';
 
 import Welcome from '../pages/Welcome';
-import Home from '../pages/Home';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={Welcome} />
-      <Route path="/components" exact component={Home} />
+      <Public path="/" exact component={Welcome} />
     </Switch>
   </BrowserRouter>
 );
